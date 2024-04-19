@@ -41,7 +41,15 @@ return [
 
 ## User
 
-# Admin
+
+https://github.com/JP0132/Resturant-Website-with-PHP-and-PostgreSQL-/assets/78804278/758933d2-b6f6-4397-970a-6bc0fc74ffca
+
+
+## Admin
+
+
+https://github.com/JP0132/Resturant-Website-with-PHP-and-PostgreSQL-/assets/78804278/bb87fab5-e6e1-4768-b039-5ba05a6a633a
+
 
 ## How to run it?
 
