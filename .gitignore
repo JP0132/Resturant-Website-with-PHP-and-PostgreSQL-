@@ -1,0 +1,7 @@
+Server/uploads/
+
+# Ignore SQL files in the root directory
+*.sql
+
+# Exclude SQL files in the server folder
+!server/*.sql

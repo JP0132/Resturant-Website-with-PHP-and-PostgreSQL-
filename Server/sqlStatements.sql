@@ -27,22 +27,15 @@ CREATE TABLE IF NOT EXISTS menu(
     images VARCHAR(250),
     courses_id INTEGER REFERENCES courses(course_id)
 );
-CREATE TABLE IF NOT EXISTS bookings(
-    booking_id SERIAL PRIMARY KEY,
-    user_id INTEGER REFERENCES users(user_id),
-    booking_date TIMESTAMP,
-    num_guests INTEGER
-);
--- CREATE TABLE IF NOT EXISTS bookingTimes(
---     booking_time_id SERIAL PRIMARY KEY,
---     booking_time TIME
+-- CREATE TABLE IF NOT EXISTS bookings(
+--     booking_id SERIAL PRIMARY KEY,
+--     user_id INTEGER REFERENCES users(user_id),
+--     booking_date TIMESTAMP,
+--     num_guests INTEGER
 -- );
--- ALTER TABLE bookings
--- ADD COLUMN booking_time_id INTEGER REFERENCES bookingTimes(booking_time_id);
--- INSERT INTO bookingtimes (booking_time)
--- VALUES ('13:00:00'),
---     ('15:00:00'),
---     ('17:00:00'),
---     ('19:00:00'),
---     ('21:00:00'),
---     ('22:00:00');
+CREATE TABLE bookings (
+    booking_id SERIAL PRIMARY KEY,
+    user_id INT NOT NULL,
+    booking_date TIMESTAMP NOT NULL,
+    CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
