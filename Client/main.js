@@ -337,7 +337,6 @@ function getAllUpcomingBookings() {
             const name = document.createElement("h4");
             const hiddenInput = document.createElement("input");
             const deleteButton = document.createElement("button");
-            console.log(pb);
 
             name.innerHTML = "Name: " + pb.fullname;
             timeCardContainer.className = "time-card";

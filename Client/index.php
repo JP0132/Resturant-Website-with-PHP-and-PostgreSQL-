@@ -266,6 +266,7 @@
   </div>
   </div>
 
+
   <script src="main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
   <script>

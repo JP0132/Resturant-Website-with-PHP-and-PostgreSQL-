@@ -5,7 +5,7 @@ class Database
 
     public function __construct()
     {
-        $config = include ('/path/to/config.php');
+        $config = include ('config.php');
         $dsn = "pgsql:host={$config['host']};port={$config['port']};dbname={$config['dbname']};user={$config['user']};password={$config['password']}";
         try {
             $this->db = new PDO($dsn);

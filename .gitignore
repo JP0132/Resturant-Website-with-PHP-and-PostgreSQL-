@@ -5,3 +5,5 @@ Server/uploads/
 
 # Exclude SQL files in the server folder
 !server/*.sql
+
+Server/config.php
