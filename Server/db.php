@@ -1,16 +1,12 @@
 <?php
 class Database
 {
-    private $host = 'localhost';
-    private $port = '5432';
-    private $dbname = 'ResturantDB';
-    private $user = 'postgres';
-    private $password = 'Rainbow7';
     protected $db;
 
     public function __construct()
     {
-        $dsn = "pgsql:host=$this->host;port=$this->port;dbname=$this->dbname;user=$this->user;password=$this->password";
+        $config = include ('/path/to/config.php');
+        $dsn = "pgsql:host={$config['host']};port={$config['port']};dbname={$config['dbname']};user={$config['user']};password={$config['password']}";
         try {
             $this->db = new PDO($dsn);
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
